@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$TIMMY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden; /* Prevents scrolling */
+            position: fixed;  /* Additional prevention of scrolling */
+            width: 100%;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://i.ibb.co/7WqdGxQ/360-F-309148988-w-KW01-Ghx-DJEVAd-XTe-RMSj-Fz1e-YHFJ925.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        .main-content {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 35px;
+            margin-left: 65px;
+        }
+
+        .hero {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(20px) translateY(35px);
+        }
+
+        .timmy-image {
+            width: 300px;
+            height: auto;
+            margin-bottom: 2rem;
+            animation: float 6s ease-in-out infinite;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 8rem;
+            margin-bottom: 1.5rem;
+            color: #4AA4F7;
+            text-shadow: 
+                -4px -4px 0 white,
+                4px -4px 0 white,
+                -4px 4px 0 white,
+                4px 4px 0 white,
+                -6px -6px 0 #2980b9,
+                6px -6px 0 #2980b9,
+                -6px 6px 0 #2980b9,
+                6px 6px 0 #2980b9;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 4rem;
+            }
+            
+            .timmy-image {
+                width: 200px;
+            }
+            
+            .main-content {
+                margin-top: 20px;
+                margin-left: 0;
+            }
+            
+            .hero {
+                transform: translateX(0) translateY(20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="hero">
+            <img src="https://i.ibb.co/wcXv46c/image36meb-1-removebg-preview.png" alt="Timmy" class="timmy-image">
+            <h1>$TIMMY</h1>
+        </div>
+    </div>
+</body>
+</html>
